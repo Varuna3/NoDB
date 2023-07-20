@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "Pine Tree",
+    "likes": 38,
+    "img": "https://uploads-ssl.webflow.com/5f157d6a58b3e36315a5d5b5/63ecb87ffc76f0079b6d2027_2.png"
+  },
+  {
+    "id": 1,
+    "name": "Rosemary",
+    "likes": 68,
+    "img": "https://www.thespicehouse.com/cdn/shop/articles/Rosemary_720x.jpg?v=1639676021"
+  },
+  {
+    "id": 2,
+    "name": "Sunflower",
+    "likes": 23,
+    "img": "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Dandelion",
+    "likes": 512,
+    "img": "https://images.squarespace-cdn.com/content/v1/54fbb611e4b0d7c1e151d22a/1653960196494-2YRSA0WT5Z4LS635NKFB/Dandelion+Seeds.jpg?format=1500w"
+  }
+]
