@@ -76,10 +76,16 @@ const NewPlant = () => {
           onChange={e => setCount(e.target.value)}
         />
         <button
-          onSubmit={() => {
-            // axios.post('/api/newplant')
+          onClick={() => {
+            axios.post('/api/newplant', {
+              name: name,
+              url: url,
+              count: count,
+            })
           }}
-        />
+        >
+          Submit
+        </button>
       </form>
     </>
   )

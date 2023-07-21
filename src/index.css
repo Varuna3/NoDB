@@ -7,9 +7,6 @@ a {
   color: #004f7d;
   text-decoration: inherit;
 }
-a:hover {
-  color: #029bdd;
-}
 
 body {
   margin: 0;
@@ -17,18 +14,19 @@ body {
 }
 
 button {
+  color: #004f7d;
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #a7a7a7;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #83deff;
 }
 
 img {
