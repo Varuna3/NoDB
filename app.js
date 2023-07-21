@@ -83,7 +83,7 @@ app.post('/api/newplant', (req, res) => {
       count: +count,
     })
     incrementalId++
-    res.send(PLANTS)
+    res.send(PLANTS[PLANTS.length - 1])
   }
 })
 
