@@ -25,21 +25,38 @@ const App = () => {
 }
 
 const Plants = () => {
-  let keys = 0
   const [plants, setPlants] = useState([])
   useEffect(() => {
     axios.get('/api/plants').then(({ data }) => {
       setPlants([...data])
     })
   }, [])
+  //----------- helper functions ------------
+
+  const deleteCard = id => {
+    axios.post(`/api/trash/${id}`)
+  }
+
+  const incrementCount = id => {}
+
+  //----------- helper functions ------------
   const arr = plants.map(e => {
-    keys++
     return (
       <div key={e.id}>
         <h1>{e.name}</h1>
         <img src={e.img}></img>
         <div className='card-foot'>
-          <button className='card-foot-button'>🗑️</button>
+          <button
+            className='card-foot-button'
+            onClick={() => {
+              axios.post(`/api/trash/${e.id}`)
+              axios.get('/api/plants').then(({ data }) => {
+                setPlants([...data])
+              })
+            }}
+          >
+            🗑️
+          </button>
           <p>{e.count}</p>
           <button className='card-foot-button'>➕</button>
         </div>
