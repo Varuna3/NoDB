@@ -58,7 +58,17 @@ const Plants = () => {
             🗑️
           </button>
           <p>{e.count}</p>
-          <button className='card-foot-button'>➕</button>
+          <button
+            className='card-foot-button'
+            onClick={() => {
+              axios.post(`/api/increment/${e.id}`)
+              axios.get('/api/plants').then(({ data }) => {
+                setPlants([...data])
+              })
+            }}
+          >
+            ➕
+          </button>
         </div>
       </div>
     )
