@@ -16,7 +16,19 @@ const App = () => {
         </button>
       </div>
       <Routes>
-        <Route path='/' element={<h1>Gang Stuff</h1>} />
+        <Route
+          path='/'
+          element={
+            <>
+              <h1>Utah Plants</h1>
+              <p>
+                Click 'Plants' to be taken to the plants page, containing all of
+                the plants people have found in Utah!
+              </p>
+              <p>Click 'NewPlant' to add a new plant to the plants page.</p>
+            </>
+          }
+        />
         <Route path='/plants' element={<Plants />} />
         <Route path='/newplant' element={<NewPlant />} />
       </Routes>

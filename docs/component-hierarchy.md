@@ -1,19 +1,27 @@
 # Component Hierarchy
 
 - Front Page
-  - AppHeader
-  - AppBody
-    - PlantCard
-      - PlantHeader
-      - PlantBody
-      - PlantFooter
-        - Trash
-        - PlantCount
-        - CountIncrement
-  - AppFooter
-    - AddPlant
-- NewPlantPage
-  - Name
-  - ImgURL
-  - Count
-  - SubmitBtn
+
+  - App Body
+    - Plants Button
+    - NewPlant Button
+
+- Plants Page
+
+  - Plants Button
+  - NewPlant Button
+  - Plant Cards
+    - Plant Title
+    - Plant Image
+    - Card Footer
+      - Trash Button
+      - Plant Count
+      - Plus Button
+
+- NewPlant Page
+  - Plants Button
+  - NewPlant Button
+  - Name Field
+  - Img URL Field
+  - Count Field
+  - Submit Button
