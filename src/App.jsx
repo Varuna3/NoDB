@@ -5,28 +5,30 @@ import axios from 'axios'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter class='main'>
       <div id='routes'>
-        <button>
-          <Link to='/plants'>Plants</Link>
-        </button>
+        <Link to='/plants'>
+          <button className='route-buttons' action='/plants'>
+            Plants
+          </button>
+        </Link>
         <br></br>
-        <button>
-          <Link to='/newplant'>NewPlant</Link>
-        </button>
+        <Link to='/newplant'>
+          <button className='route-buttons'>New Plant</button>
+        </Link>
       </div>
       <Routes>
         <Route
           path='/'
           element={
-            <>
+            <div className='main-body'>
               <h1>Utah Plants</h1>
               <p>
                 Click 'Plants' to be taken to the plants page, containing all of
                 the plants people have found in Utah!
               </p>
               <p>Click 'NewPlant' to add a new plant to the plants page.</p>
-            </>
+            </div>
           }
         />
         <Route path='/plants' element={<Plants />} />
@@ -86,7 +88,7 @@ const Plants = () => {
     )
   })
 
-  return <>{arr}</>
+  return <div className='plants-container'>{arr}</div>
 }
 
 const NewPlant = () => {

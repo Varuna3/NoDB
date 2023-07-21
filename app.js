@@ -31,6 +31,30 @@ const PLANTS = [
     count: 512,
     img: 'https://images.squarespace-cdn.com/content/v1/54fbb611e4b0d7c1e151d22a/1653960196494-2YRSA0WT5Z4LS635NKFB/Dandelion+Seeds.jpg?format=1500w',
   },
+  {
+    id: 4,
+    name: 'Dandelion',
+    count: 512,
+    img: 'https://images.squarespace-cdn.com/content/v1/54fbb611e4b0d7c1e151d22a/1653960196494-2YRSA0WT5Z4LS635NKFB/Dandelion+Seeds.jpg?format=1500w',
+  },
+  {
+    id: 5,
+    name: 'Dandelion',
+    count: 512,
+    img: 'https://images.squarespace-cdn.com/content/v1/54fbb611e4b0d7c1e151d22a/1653960196494-2YRSA0WT5Z4LS635NKFB/Dandelion+Seeds.jpg?format=1500w',
+  },
+  {
+    id: 6,
+    name: 'Dandelion',
+    count: 512,
+    img: 'https://images.squarespace-cdn.com/content/v1/54fbb611e4b0d7c1e151d22a/1653960196494-2YRSA0WT5Z4LS635NKFB/Dandelion+Seeds.jpg?format=1500w',
+  },
+  {
+    id: 7,
+    name: 'Dandelion',
+    count: 512,
+    img: 'https://images.squarespace-cdn.com/content/v1/54fbb611e4b0d7c1e151d22a/1653960196494-2YRSA0WT5Z4LS635NKFB/Dandelion+Seeds.jpg?format=1500w',
+  },
 ]
 
 // middleware
