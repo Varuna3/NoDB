@@ -89,5 +89,5 @@ app.post('/api/newplant', (req, res) => {
 
 // open server
 ViteExpress.listen(app, 8000, () => {
-  console.log(`My port 8000 is OPEN BABY`)
+  console.log(`Hold ctrl and click this: http://localhost:8000/`)
 })
