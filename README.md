@@ -7,6 +7,7 @@ This project is purely a proof-of-concepts, however the documentation will be tr
 ### Install
 
 The only real dependency is nodejs/npm. If you're just an average Joe, you should be able to find an install somewhere on this site: https://nodejs.org/en/download. OR, if you're superior, you can just run:
+
 `sudo pacman -S nodejs npm`
 
 After installing nodejs and npm, you can run these commands to launch the project locally.
