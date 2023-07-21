@@ -8,9 +8,7 @@ const App = () => {
     <BrowserRouter class='main'>
       <div id='routes'>
         <Link to='/plants'>
-          <button className='route-buttons' action='/plants'>
-            Plants
-          </button>
+          <button className='route-buttons'>Plants</button>
         </Link>
         <br></br>
         <Link to='/newplant'>
@@ -45,15 +43,7 @@ const Plants = () => {
       setPlants([...data])
     })
   }, [])
-  //----------- helper functions ------------
 
-  const deleteCard = id => {
-    axios.post(`/api/trash/${id}`)
-  }
-
-  const incrementCount = id => {}
-
-  //----------- helper functions ------------
   const arr = plants.map(e => {
     return (
       <div key={e.id}>

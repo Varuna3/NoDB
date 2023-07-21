@@ -6,19 +6,24 @@
   justify-content: space-around;
   background-color: rgb(41, 41, 41);
   color: rgb(255, 248, 207);
+  overflow-x: hidden;
 }
 
 #routes {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .main-body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 75px;
+  box-shadow: 0px 0px 10px 5px rgb(66, 66, 66);
 }
 
 a {
@@ -33,6 +38,7 @@ body {
 }
 
 .route-buttons {
+  margin: 10px;
   width: 200px;
   height: 60px;
   color: rgb(255, 248, 207);
@@ -44,7 +50,7 @@ body {
   font-family: inherit;
   background-color: #004f43;
   cursor: pointer;
-  box-shadow: 0px 0px 10px 2px #00211c;
+  box-shadow: 0px 0px 5px 1px #00211c;
   transition: box-shadow 0.25s, background-color 0.25s;
 }
 .route-buttons:hover {
@@ -54,14 +60,13 @@ body {
 
 .plants-container {
   display: flex;
-  width: 100vw;
   flex-wrap: wrap;
   gap: 5vw;
+  justify-content: center;
 }
 
 img {
   width: 200px;
-  height: 200px;
 }
 
 .card-foot {
