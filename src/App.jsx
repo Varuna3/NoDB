@@ -46,12 +46,11 @@ const Plants = () => {
 
   const arr = plants.map(e => {
     return (
-      <div key={e.id}>
+      <div key={e.id} className='plant-card'>
         <h1>{e.name}</h1>
         <img src={e.img}></img>
         <div className='card-foot'>
           <button
-            className='card-foot-button'
             onClick={() => {
               axios.post(`/api/trash/${e.id}`)
               axios.get('/api/plants').then(({ data }) => {
@@ -63,7 +62,6 @@ const Plants = () => {
           </button>
           <p>{e.count}</p>
           <button
-            className='card-foot-button'
             onClick={() => {
               axios.post(`/api/increment/${e.id}`)
               axios.get('/api/plants').then(({ data }) => {

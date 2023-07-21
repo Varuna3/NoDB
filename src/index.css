@@ -29,7 +29,6 @@
 a {
   font-weight: 500;
   color: rgb(255, 248, 207);
-  text-decoration: inherit;
 }
 
 body {
@@ -51,11 +50,14 @@ body {
   background-color: #004f43;
   cursor: pointer;
   box-shadow: 0px 0px 5px 1px #00211c;
-  transition: box-shadow 0.25s, background-color 0.25s;
+  transition: box-shadow 0.25s, background-color 0.25s, width 0.25s,
+    height 0.25s;
 }
 .route-buttons:hover {
   background-color: #006d5d;
   box-shadow: 0px 0px 10px 2px #00473d;
+  width: 250px;
+  height: 110px;
 }
 
 .plants-container {
@@ -66,16 +68,24 @@ body {
 }
 
 img {
+  border-radius: 15px;
   width: 200px;
+  max-height: 500px;
+  margin-bottom: 25px;
 }
 
 .card-foot {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  max-width: 200px;
+  flex-wrap: wrap;
 }
 
 .card-foot button {
-  background-color: rgb(228, 228, 228);
+  font-size: 30px;
+  background-color: rgb(128, 128, 128);
   border-radius: 100%;
   border: 1px solid transparent;
   width: 50px;
@@ -83,8 +93,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 10px 5px rgb(24, 24, 24);
 }
 
 .card-foot button:hover {
-  border-color: green;
+  cursor: pointer;
+}
+
+.plant-card {
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 5px rgb(24, 24, 24);
 }
