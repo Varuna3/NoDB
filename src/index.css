@@ -43,10 +43,15 @@ body {
   font-family: inherit;
   background-color: #004f43;
   cursor: pointer;
-  transition: border-color 0.25s;
+  box-shadow: 0px 0px 10px 2px #00211c;
+  /* transition: border-color 0.25s; */
+  transition: box-shadow 0.25s;
+  transition: background-color 0.25s;
 }
 .route-buttons:hover {
-  border-color: #68ffb9;
+  /* border-color: #68ffb9; */
+  background-color: #006d5d;
+  box-shadow: 0px 0px 10px 2px #00473d;
 }
 
 .plants-container {
