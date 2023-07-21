@@ -2,6 +2,23 @@
 
 This project is purely a proof-of-concepts, however the documentation will be treated as that of a genuine project, for the sake of my grade. The premise of the project is a web app where we can keep track of the plants in Utah that people see the most. Theoretically, the more of a given type of plant in utah, the more people that will see it, and therefore the higher the count should increment. Unfortunately this is a NoDB project, which means there is no real database. I could write to the filesystem on a web-server, but I was not required to, and this is purely a proof-of-concepts project.
 
+##
+
+### Install
+
+The only real dependency is nodejs/npm. If you're just an average Joe, you should be able to find an install somewhere on this site: https://nodejs.org/en/download. OR, if you're superior, you can just run:
+`sudo pacman -S nodejs npm`
+
+After installing nodejs and npm, you can run these commands to launch the project locally.
+
+`git clone https://github.com/Varuna3/NoDB.git`
+
+`cd NoDB`
+
+`npm i`
+
+`npm run dev`
+
 ## UT Plant Tracker
 
 An app to keep track of the amount of a given type of plant there are in Utah, with 'features' designed to allow anyone to increment the count of a type of plant.
