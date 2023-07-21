@@ -35,10 +35,14 @@ const Plants = () => {
   const arr = plants.map(e => {
     keys++
     return (
-      <div key={keys}>
+      <div key={e.id}>
         <h1>{e.name}</h1>
         <img src={e.img}></img>
-        <p>{e.count}</p>
+        <div className='card-foot'>
+          <button className='card-foot-button'>🗑️</button>
+          <p>{e.count}</p>
+          <button className='card-foot-button'>➕</button>
+        </div>
       </div>
     )
   })
@@ -90,6 +94,8 @@ const NewPlant = () => {
     </>
   )
 }
+
+const Card = () => {}
 
 export { Plants, NewPlant }
 
