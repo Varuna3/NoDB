@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+h1 {
+  margin: 0px;
+}
+
 .main-body {
   width: 800px;
   height: 200px;
@@ -25,12 +29,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 10px 5px rgb(81, 81, 81);
+  gap: 5px;
+  box-shadow: 0px 0px 10px 5px rgb(24, 24, 24);
   border-radius: 25px;
-  transition: width 0.25s, height 0.25s, margin-top 0.25s;
+  transition: width 0.25s, height 0.25s, margin-top 0.25s, box-shadow 0.25s;
 }
 
 .main-body:hover {
+  box-shadow: 0px 0px 10px 5px rgb(54, 54, 54);
   width: 900px;
   height: 300px;
   margin-top: 50px;
@@ -74,7 +80,7 @@ body {
 .plants-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 5vw;
+  gap: 1vw;
   justify-content: center;
 }
 
@@ -106,23 +112,34 @@ img {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 10px 5px rgb(24, 24, 24);
-  transition: width 0.25s, height 0.25s;
+  transition: width 0.25s, height 0.25s, box-shadow 0.25s;
 }
 
 .card-foot button:hover {
   cursor: pointer;
   width: 60px;
   height: 60px;
+  box-shadow: 0px 0px 10px 5px rgb(54, 54, 54);
 }
 
 .plant-card {
-  padding: 10px;
+  margin: 50px;
+  width: 300px;
+  height: 500px;
   border-radius: 15px;
-  box-shadow: 0px 0px 5px 5px rgb(24, 24, 24);
+  box-shadow: 0px 0px 10px 5px rgb(24, 24, 24);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  transition: width 0.25s, height 0.25s, margin 0.25s, box-shadow 0.25s;
+}
+
+.plant-card:hover {
+  width: 350px;
+  height: 550px;
+  margin: 25px;
+  box-shadow: 0px 0px 10px 5px rgb(54, 54, 54);
 }
 
 #emptyspace {
@@ -137,15 +154,16 @@ form {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 0px 10px 5px rgb(81, 81, 81);
+  box-shadow: 0px 0px 10px 5px rgb(24, 24, 24);
   border-radius: 25px;
-  transition: width 0.25s, height 0.25s, margin-top 0.25s;
+  transition: width 0.25s, height 0.25s, margin-top 0.25s, box-shadow 0.25s;
 }
 
 form:hover {
   height: 400px;
   width: 350px;
   margin-top: 75px;
+  box-shadow: 0px 0px 10px 5px rgb(54, 54, 54);
 }
 
 form input {
