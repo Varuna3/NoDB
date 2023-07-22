@@ -70,13 +70,13 @@ This field will keep track of the characters you're entering (preferably a strin
 
 ![Alt text](docs/ImageURL.png)
 
-This field will keep track of the characters you're entering, (preferably a string / URL), and will pass it trough to a new plant card after you hit submit.
+This field will keep track of the characters you're entering, (preferably a string / URL), and will pass it through to a new plant card after you hit submit.
 
 ### Count Field
 
 ![Alt text](docs/CountField.png)
 
-This field will keep track of the characters you're entering, (preferably a number), and will pass it trough to a new plant card after you hit submit.
+This field will keep track of the characters you're entering, (preferably a number), and will pass it through to a new plant card after you hit submit.
 
 ### Submit Button
 
