@@ -10,7 +10,7 @@ const PLANTS = [
   {
     id: 0,
     name: 'Pine Tree',
-    count: 38,
+    count: 75,
     img: 'https://uploads-ssl.webflow.com/5f157d6a58b3e36315a5d5b5/63ecb87ffc76f0079b6d2027_2.png',
   },
   {

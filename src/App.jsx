@@ -10,7 +10,7 @@ const App = () => {
         <Link to='/plants'>
           <button className='route-buttons'>Plants</button>
         </Link>
-        <br></br>
+        <div style={{ height: 200 }}></div>
         <Link to='/newplant'>
           <button className='route-buttons'>New Plant</button>
         </Link>
@@ -90,8 +90,8 @@ const NewPlant = () => {
   const [count, setCount] = useState('')
 
   return (
-    <>
-      <form action='/'>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <form action='/' autoComplete='off'>
         <label htmlFor='name'>Name: </label>
         <input
           id='name'
@@ -125,7 +125,7 @@ const NewPlant = () => {
           Submit
         </button>
       </form>
-    </>
+    </div>
   )
 }
 
