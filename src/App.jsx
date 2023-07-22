@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const App = () => {
   return (
-    <BrowserRouter class='main'>
+    <BrowserRouter>
       <div id='routes'>
         <Link to='/plants'>
           <button className='route-buttons'>Plants</button>
@@ -76,7 +76,12 @@ const Plants = () => {
     )
   })
 
-  return <div className='plants-container'>{arr}</div>
+  return (
+    <div>
+      <div className='plants-container'>{arr}</div>
+      <div id='emptyspace'></div>
+    </div>
+  )
 }
 
 const NewPlant = () => {
@@ -123,8 +128,6 @@ const NewPlant = () => {
     </>
   )
 }
-
-const Card = () => {}
 
 export { Plants, NewPlant }
 

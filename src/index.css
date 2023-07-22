@@ -106,14 +106,21 @@ img {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 10px 5px rgb(24, 24, 24);
+  transition: width 0.25s, height 0.25s;
 }
 
 .card-foot button:hover {
   cursor: pointer;
+  width: 60px;
+  height: 60px;
 }
 
 .plant-card {
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 5px 5px rgb(24, 24, 24);
+}
+
+#emptyspace {
+  height: 100px;
 }
