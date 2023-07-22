@@ -14,16 +14,29 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20px;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
 }
 
 .main-body {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 75px;
-  box-shadow: 0px 0px 10px 5px rgb(66, 66, 66);
+  box-shadow: 0px 0px 10px 5px rgb(81, 81, 81);
+  border-radius: 25px;
+  padding: 10px;
+  width: 800px;
+  height: 200px;
+  margin-top: 100px;
+  transition: width 0.25s, height 0.25s, margin-top 0.25s;
+}
+
+.main-body:hover {
+  width: 900px;
+  height: 300px;
+  margin-top: 50px;
 }
 
 a {
